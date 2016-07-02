@@ -9,7 +9,7 @@ function OnMouseDown() {
 }
 
 function OnMouseUp(){
-    this.transform.parent = GameObject.Find("FPSController").transform;
+    //this.transform.parent = GameObject.Find("FPSController").transform;
     this.transform.parent = null;
 }
 
