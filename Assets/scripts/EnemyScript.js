@@ -12,3 +12,9 @@ function DeductPoints (hitpoints : int) {
             Destroy(gameObject);
         }
     }
+
+
+    function coinTest (hitpoints : int) {
+
+        Destroy(gameObject);
+    }

@@ -1,4 +1,5 @@
 ﻿function OnTriggerEnter (info : Collider){
-    Destory(gameObject);
-    CoinSystem.coninscollect += 1;
+    Destroy(gameObject);
+    CoinSystem.coinscollect += 1;
+    Debug.Log('enterd trigger : COIN');
 }
