@@ -8,8 +8,11 @@ var QuestBox : GameObject;
 var QuestText : GameObject;
 var QuestName: String;
 
+var QuestItemToShow : GameObject;
+
 function OnMouseDown (){
     if (TextBoxOnCheck == 0){
+        QuestItemToShow.SetActive(true);
         TextBoxOnCheck = 1;
         MessageBox.SetActive(true);
         TextBox.GetComponent.<Text>().text = TextMessage;
@@ -27,14 +30,12 @@ function Update () {
         if(TextBoxOnCheck == 1){
             MessageBox.SetActive(false);
             TextBoxOnCheck = 0;
-            TextMessage = "Villager: Get going then!";
         }
     }
     if (Input.GetButtonDown("Cancel")){
         if(TextBoxOnCheck == 1){
             MessageBox.SetActive(false);
             TextBoxOnCheck = 0;
-            TextMessage = "Villager: Get going then!";
         }
     }
 }
