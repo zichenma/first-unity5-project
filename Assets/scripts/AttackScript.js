@@ -12,7 +12,6 @@ function Update () {
             if (totarget < range) {
 
                 hit.transform.SendMessage("DeductPoints", hitpoints, SendMessageOptions.DontRequireReceiver);
-                hit.transform.SendMessage("coinTest", hitpoints, SendMessageOptions.DontRequireReceiver);
             }
         }
     }
